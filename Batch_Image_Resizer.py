@@ -22,13 +22,11 @@ files_grabbed = []
 
 for file in File_types:
 	files_grabbed.extend(glob.glob(file))
-
-
-for image in files_grabbed:
-	print("[+] Resizing Image : " + image)
-	pic = cv2.imread(image, 1)
-	pic = cv2.resize(pic, (277,277))
-	cv2.imwrite(Folder + '/' + image, pic)
+	for image in files_grabbed:
+		print("[+] Resizing Image : " + image)
+		pic = cv2.imread(image, 1)
+		pic = cv2.resize(pic, (277,277))
+		cv2.imwrite(Folder + '/' + image, pic)
 
 print("[+] Resize Complete.")
 	
