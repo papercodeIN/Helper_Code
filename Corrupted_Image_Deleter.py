@@ -1,6 +1,5 @@
 __author__ = 'Nakum Urvish'
 __Version__ = '0.1'
-
 """
 Script to delete all corrupted image in current working directory.
 """
