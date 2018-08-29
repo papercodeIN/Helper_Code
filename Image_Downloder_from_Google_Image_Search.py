@@ -1,5 +1,5 @@
-__author__ == 'Nakum Urvish'
-__version__ == '0.1'
+__author__ = 'Nakum Urvish'
+__Version__ = '0.1'
 """
 Script to download bunch of image which appers in google seach results
 and make a dataset of those images for machine-learning and deep-learning.

@@ -29,7 +29,7 @@ for image in files_grabbed:
 	try:
 		print("[+] Resizing Image : " + image)
 		pic = cv2.imread(image, 1)
-		pic = cv2.resize(pic, (277,277))
+		pic = cv2.resize(pic, (200,200))
 		cv2.imwrite(Folder + '/' + image, pic)
 	except Exception as e:
 		print("[-] Bad Input Image. ")
