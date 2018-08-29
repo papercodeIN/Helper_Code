@@ -9,7 +9,14 @@ import os
 import glob
 import cv2
 
+# insert types of files you want to take for resize
 File_types = ("*.jpg" , "*.png" , "*.jpeg" , "*.bmp")
+
+files_grabbed = []
+
+# Store list of image
+for file in File_types:
+	files_grabbed.extend(glob.glob(file))
 
 # Create Folder to store resized image
 Folder = "Resized_Image"
@@ -17,16 +24,16 @@ if not os.path.exists(Folder):
 	os.mkdir(Folder)
 	print("[+] Resized_Image Folder Created.")
 
-
-files_grabbed = []
-
-for file in File_types:
-	files_grabbed.extend(glob.glob(file))
-	for image in files_grabbed:
+# Main loop for resize each image
+for image in files_grabbed:
+	try:
 		print("[+] Resizing Image : " + image)
 		pic = cv2.imread(image, 1)
 		pic = cv2.resize(pic, (277,277))
 		cv2.imwrite(Folder + '/' + image, pic)
+	except Exception as e:
+		print("[-] Bad Input Image. ")
+
 
 print("[+] Resize Complete.")
 	
