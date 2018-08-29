@@ -1,14 +1,11 @@
 import urllib
-import cv2
-import numpy as np
 import os
-
 
 Folder_Name = "Data_Set"
 
 def download_image():
 
-    # Put your imagenet dataset link here which contain bunch of url or images
+    # Put your imagenet dataset link here which contain bunch of url of images
     images_link = 'http://www.image-net.org/api/text/imagenet.synset.geturls?wnid=n03245889'   
    
     # Split each line and get each image url for download
