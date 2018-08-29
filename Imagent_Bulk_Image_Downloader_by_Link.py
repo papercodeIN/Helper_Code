@@ -1,6 +1,15 @@
+__author__ == 'Nakum Urvish'
+__Version__ == '0.1'
+
+"""
+Script to download images for deeplearning
+and also machine learning from imagenet image-url list.
+"""
+
 import urllib
 import os
 
+# Folder to save those images
 Folder_Name = "Data_Set"
 
 def download_image():
