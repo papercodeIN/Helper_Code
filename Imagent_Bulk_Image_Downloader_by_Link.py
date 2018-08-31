@@ -29,8 +29,6 @@ def download_image():
     # Create folder to save those images
     if not os.path.exists(Folder_Name):
         os.makedirs(Folder_Name)
-	print("*" * 60)
-	print("*" * 60)
         print("[+] Data_Set Folder Created.")
 	print("*" * 60)
 	print("*" * 60)
