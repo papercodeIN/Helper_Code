@@ -1,5 +1,5 @@
-__author__ == 'Nakum Urvish'
-__Version__ == '0.1'
+__author__ = 'Nakum Urvish'
+__Version__ = '0.2'
 """
 Script to download images for deeplearning
 and also machine learning from imagenet image-url list.
@@ -8,13 +8,17 @@ and also machine learning from imagenet image-url list.
 import urllib
 import os
 
-
-Folder_Name = "Data_Set"
-
+print("[+] Enter Folder Name For Your Dataset.")
+Folder_Name = raw_input("[+] Folder_Name : ")
+print("*" * 60)
+print("*" * 60)
 def download_image():
 
     # Put your imagenet dataset link here which contain bunch of url or images
-    images_link = 'http://www.image-net.org/api/text/imagenet.synset.geturls?wnid=n03245889'   
+    print("[+] Enter Imagenet Dataset Link To Download Image.")
+    images_link = raw_input("[+] Link : ")  
+    print("*" * 60) 
+    print("*" * 60)
    
     # Split each line and get each image url for download
     image_urls = urllib.urlopen(images_link).read().decode()
@@ -25,7 +29,11 @@ def download_image():
     # Create folder to save those images
     if not os.path.exists(Folder_Name):
         os.makedirs(Folder_Name)
+	print("*" * 60)
+	print("*" * 60)
         print("[+] Data_Set Folder Created.")
+	print("*" * 60)
+	print("*" * 60)
         
     # Main loop to download each image contain in url
     
@@ -39,6 +47,11 @@ def download_image():
             print(str(e))  
 	            
     print("[+] Total Images Download : " + str(pic_num))
+    print("*" * 60)
+    print("*" * 60)
+    print("[+] Download Complete.")
+    print("*" * 60)
+    print("*" * 60)
 
 # initiate the function
 download_image()
