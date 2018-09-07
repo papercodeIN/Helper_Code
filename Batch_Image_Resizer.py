@@ -9,6 +9,11 @@ import os
 import glob
 import cv2
 
+#image width and height
+Size_width = int(input("Img_Width : "))
+Size_Height = int(input("Img_Height : "))
+
+
 # insert types of files you want to take for resize
 File_types = ("*.jpg" , "*.png" , "*.jpeg" , "*.bmp")
 
@@ -29,7 +34,7 @@ for image in files_grabbed:
 	try:
 		print("[+] Resizing Image : " + image)
 		pic = cv2.imread(image, 1)
-		pic = cv2.resize(pic, (200,200))
+		pic = cv2.resize(pic, (Size_width,Size_Height))
 		cv2.imwrite(Folder + '/' + image, pic)
 	except Exception as e:
 		print("[-] Bad Input Image. ")
