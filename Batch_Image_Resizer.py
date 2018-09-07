@@ -13,7 +13,6 @@ import cv2
 Size_width = int(input("Img_Width : "))
 Size_Height = int(input("Img_Height : "))
 
-
 # insert types of files you want to take for resize
 File_types = ("*.jpg" , "*.png" , "*.jpeg" , "*.bmp")
 
