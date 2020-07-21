@@ -1,0 +1,20 @@
+<profile name="Dailymotion 1280x720" extension="mp4" args=
+"f=mp4 acodec=aac ab=96k ar=44100 vcodec=libx264 minrate=0 vb=1500k g=250 bf=3 s=1280x720 aspect=%dar mbd=2 trellis=1 mv4=1 subq=7 qmin=10 qcomp=0.6 qdiff=4 qmax=51 pass=%passes" 
+url="http://www.dailymotion.com/upload";
+/>
+
+
+<profile name="Dailymotion 1280x720" extension="mp4" args=
+"f=mp4 acodec=aac ab=96k ar=44100 vcodec=libx264 minrate=0 b=1500k g=250 bf=3 s=1280x720 aspect=%dar mbd=2 trellis=1 mv4=1 subq=7 qmin=10 qcomp=0.6 qdiff=4 qmax=51 pass=%passes"
+url="http://www.dailymotion.com/upload";
+/>
+
+
+<profile name="Dailymotion 1280x720" extension="mp4" args=
+"f=mp4 acodec=libfaac ab=96k ar=44100 vcodec=libx264 minrate=0 b=1500k s=1280x720 aspect=%dar mbd=2 trell=1 mv4=1 progressive=1"
+/>
+
+
+<profile name="Dailymotion 1280x720" extension="mp4" args="
+f=mp4 acodec=libfaac ab=96k ar=44100 vcodec=libx264 minrate=0 b=1500k s=1280x720 aspect=%dar mbd=2 trell=1 mv4=1 progressive=1 deinterlace=1"
+/>
